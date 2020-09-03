@@ -1,5 +1,5 @@
 # A minimal docker baseimage to ease creation of long-lived application containers
-[![Docker Automated build](https://img.shields.io/docker/automated/jlesage/baseimage.svg)](https://hub.docker.com/r/jlesage/baseimage/) [![Build Status](https://travis-ci.org/jlesage/docker-baseimage.svg?branch=master)](https://travis-ci.org/jlesage/docker-baseimage)
+[![Docker Automated build](https://img.shields.io/docker/automated/kumakichi/baseimage.svg)](https://hub.docker.com/r/kumakichi/baseimage/) [![Build Status](https://travis-ci.org/kumakichi/docker-baseimage.svg?branch=master)](https://travis-ci.org/kumakichi/docker-baseimage)
 
 This is a docker baseimage that can be used to create containers for any
 long-lived application.
@@ -39,27 +39,28 @@ Different docker images are available:
 
 | Base distribution  | Tag              | Size |
 |--------------------|------------------|------|
-| [Alpine 3.5]       | alpine-3.5       | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.5.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.5 "Get your own image badge on microbadger.com") |
-| [Alpine 3.6]       | alpine-3.6       | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.6.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.6 "Get your own image badge on microbadger.com") |
-| [Alpine 3.7]       | alpine-3.7       | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.7.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.7 "Get your own image badge on microbadger.com") |
-| [Alpine 3.8]       | alpine-3.8       | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.8.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.8 "Get your own image badge on microbadger.com") |
-| [Alpine 3.9]       | alpine-3.9       | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.9.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.9 "Get your own image badge on microbadger.com") |
-| [Alpine 3.10]      | alpine-3.10      | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.10.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.10 "Get your own image badge on microbadger.com") |
-| [Alpine 3.11]      | alpine-3.11      | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.11.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.11 "Get your own image badge on microbadger.com") |
-| [Alpine 3.12]      | alpine-3.12      | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.12.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.12 "Get your own image badge on microbadger.com") |
-| [Alpine 3.5]       | alpine-3.5-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.5-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.5-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.6]       | alpine-3.6-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.6-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.6-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.7]       | alpine-3.7-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.7-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.7-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.8]       | alpine-3.8-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.8-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.8-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.9]       | alpine-3.9-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.9-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.9-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.10]       | alpine-3.10-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.10-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.10-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.11]       | alpine-3.11-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.11-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.11-glibc "Get your own image badge on microbadger.com") |
-| [Alpine 3.12]       | alpine-3.12-glibc | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:alpine-3.12-glibc.svg)](http://microbadger.com/#/images/jlesage/baseimage:alpine-3.12-glibc "Get your own image badge on microbadger.com") |
-| [Debian 8]         | debian-8         | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:debian-8.svg)](http://microbadger.com/#/images/jlesage/baseimage:debian-8/ "Get your own image badge on microbadger.com") |
-| [Debian 9]         | debian-9         | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:debian-9.svg)](http://microbadger.com/#/images/jlesage/baseimage:debian-9/ "Get your own image badge on microbadger.com") |
-| [Debian 10]        | debian-10        | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:debian-10.svg)](http://microbadger.com/#/images/jlesage/baseimage:debian-10/ "Get your own image badge on microbadger.com") |
-| [Ubuntu 16.04 LTS] | ubuntu-16.04     | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:ubuntu-16.04.svg)](http://microbadger.com/#/images/jlesage/baseimage:ubuntu-16.04 "Get your own image badge on microbadger.com") |
-| [Ubuntu 18.04 LTS] | ubuntu-18.04     | [![](https://images.microbadger.com/badges/image/jlesage/baseimage:ubuntu-18.04.svg)](http://microbadger.com/#/images/jlesage/baseimage:ubuntu-18.04 "Get your own image badge on microbadger.com") |
+| [Alpine 3.5]       | alpine-3.5       | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.5.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.5 "Get your own image badge on microbadger.com") |
+| [Alpine 3.6]       | alpine-3.6       | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.6.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.6 "Get your own image badge on microbadger.com") |
+| [Alpine 3.7]       | alpine-3.7       | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.7.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.7 "Get your own image badge on microbadger.com") |
+| [Alpine 3.8]       | alpine-3.8       | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.8.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.8 "Get your own image badge on microbadger.com") |
+| [Alpine 3.9]       | alpine-3.9       | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.9.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.9 "Get your own image badge on microbadger.com") |
+| [Alpine 3.10]      | alpine-3.10      | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.10.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.10 "Get your own image badge on microbadger.com") |
+| [Alpine 3.11]      | alpine-3.11      | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.11.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.11 "Get your own image badge on microbadger.com") |
+| [Alpine 3.12]      | alpine-3.12      | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.12.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.12 "Get your own image badge on microbadger.com") |
+| [Alpine 3.5]       | alpine-3.5-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.5-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.5-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.6]       | alpine-3.6-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.6-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.6-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.7]       | alpine-3.7-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.7-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.7-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.8]       | alpine-3.8-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.8-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.8-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.9]       | alpine-3.9-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.9-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.9-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.10]       | alpine-3.10-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.10-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.10-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.11]       | alpine-3.11-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.11-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.11-glibc "Get your own image badge on microbadger.com") |
+| [Alpine 3.12]       | alpine-3.12-glibc | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:alpine-3.12-glibc.svg)](http://microbadger.com/#/images/kumakichi/baseimage:alpine-3.12-glibc "Get your own image badge on microbadger.com") |
+| [Debian 8]         | debian-8         | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:debian-8.svg)](http://microbadger.com/#/images/kumakichi/baseimage:debian-8/ "Get your own image badge on microbadger.com") |
+| [Debian 9]         | debian-9         | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:debian-9.svg)](http://microbadger.com/#/images/kumakichi/baseimage:debian-9/ "Get your own image badge on microbadger.com") |
+| [Debian 10]        | debian-10        | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:debian-10.svg)](http://microbadger.com/#/images/kumakichi/baseimage:debian-10/ "Get your own image badge on microbadger.com") |
+| [Ubuntu 16.04 LTS] | ubuntu-16.04     | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:ubuntu-16.04.svg)](http://microbadger.com/#/images/kumakichi/baseimage:ubuntu-16.04 "Get your own image badge on microbadger.com") |
+| [Ubuntu 18.04 LTS] | ubuntu-18.04     | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:ubuntu-18.04.svg)](http://microbadger.com/#/images/kumakichi/baseimage:ubuntu-18.04 "Get your own image badge on microbadger.com") |
+| [Ubuntu 20.04 LTS] | ubuntu-20.04     | [![](https://images.microbadger.com/badges/image/kumakichi/baseimage:ubuntu-20.04.svg)](http://microbadger.com/#/images/kumakichi/baseimage:ubuntu-20.04 "Get your own image badge on microbadger.com") |
 
 [Alpine 3.5]: https://alpinelinux.org
 [Alpine 3.6]: https://alpinelinux.org
@@ -74,6 +75,7 @@ Different docker images are available:
 [Debian 10]: https://www.debian.org/releases/buster/
 [Ubuntu 16.04 LTS]: http://releases.ubuntu.com/16.04/
 [Ubuntu 18.04 LTS]: http://releases.ubuntu.com/18.04/
+[Ubuntu 20.04 LTS]: http://releases.ubuntu.com/20.04/
 
 Due to its size, the `Alpine` image is recommended.  However, it may be harder
 to integrate your application (especially third party ones without source code),
@@ -136,7 +138,7 @@ NodeJS server.
 In ``Dockerfile``:
 ```
 # Pull base image.
-FROM jlesage/baseimage:alpine-3.6
+FROM kumakichi/baseimage:alpine-3.6
 
 # Install http-server.
 RUN add-pkg nodejs-npm && \

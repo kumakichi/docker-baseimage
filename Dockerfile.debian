@@ -1,7 +1,7 @@
 #
 # baseimage Dockerfile
 #
-# https://github.com/jlesage/docker-baseimage
+# https://github.com/kumakichi/docker-baseimage
 #
 
 ARG BASEIMAGE=unknown
@@ -11,7 +11,7 @@ FROM ${BASEIMAGE}
 
 # Define s6 overlay related variables.
 ARG S6_OVERLAY_ARCH=x86_64
-ARG S6_OVERLAY_VERSION=1.21.4.0
+ARG S6_OVERLAY_VERSION=2.0.0.1
 ARG S6_OVERLAY_URL=https://github.com/just-containers/s6-overlay/releases/download/v${S6_OVERLAY_VERSION}/s6-overlay-${S6_OVERLAY_ARCH}.tar.gz
 
 # Variables needed for package installation via APT.
@@ -39,7 +39,7 @@ RUN \
         tar xzf s6-overlay.tar.gz -C /; \
     fi && \
     echo "Patching s6-overlay..." && \
-    curl -# -L https://github.com/jlesage/s6-overlay/commit/d151c41.patch | patch -d / -p3 && \
+    curl -# -L https://github.com/kumakichi/s6-overlay/commit/434e4eb.patch | patch -d / -p3 && \
     chmod +x \
         /etc/s6/services/.s6-svscan/SIGHUP \
         /etc/s6/services/.s6-svscan/SIGINT \
@@ -100,5 +100,5 @@ LABEL \
       org.label-schema.name="baseimage" \
       org.label-schema.description="A minimal docker baseimage to ease creation of long-lived application containers" \
       org.label-schema.version="${IMAGE_VERSION}" \
-      org.label-schema.vcs-url="https://github.com/jlesage/docker-baseimage" \
+      org.label-schema.vcs-url="https://github.com/kumakichi/docker-baseimage" \
       org.label-schema.schema-version="1.0"
